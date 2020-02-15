@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WeatherApp 🌦</title>
+    <meta charset="UTF-8" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/f41853a9f4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+
+  <body>
+    <div class=container id="weather-app-page">
+    <div class="container" id="app-container">
+    <header>
+      <form id="search-city-form">
+        <input id="searched-city"
+          type="text"
+          placeholder="Enter a city"
+          autocomplete="off"
+          autofocus="on"
+        />
+        <input id="search-button" type="submit" value="Search" />
+      </form>
+      <button id="button-current-location">Current location</button>
+    </header>
+    <div id="current-city">
+    <div class="time-stamp-display">
+      Last updated <span id="time-stamp-display">Sun, 26 Jan, 15:30</span> 
+    </div>
+    <div class="city display" id="city-display">
+      Amsterdam
+  </div>
+  <div id="weather-description-display">
+    clear sky
+  </div>
+  <div class="temperature-display">
+    <img src="" alt="" id="main-icon"/>
+  <span id="temperature-value">13</span><button id="celsius-button" class="active">ºC</button><span id="temp-button">|</span><button id="fahrenheit-button">ºF</button>
+</div>
+<div>
+  <ul>
+    <li class="humidity">Humidity: <span id="humidity">6</span>%</li>
+    <li class="wind-speed">Wind: <span id="wind">5</span>km/h</li>
+  </ul>
+</div>
+</div>
+<div id="forecast">
+  <div class="row">
+    <div class="col">Mon</div>
+    <div class="col"><i class="fas fa-cloud"></i></div>
+    <div class="col">10º 5º</div>
+  </div>
+    <div class="row">
+    <div class="col">Tue</div>
+    <div class="col"><i class="fas fa-cloud-rain"></i></div>
+    <div class="col">10º 5º</div>
+  </div>
+  <div class="row">
+    <div class="col">Wed</div>
+    <div class="col"><i class="fas fa-bolt"></i></div>
+    <div class="col">15ºC 11º</div>
+  </div>
+  <div class="row">
+    <div class="col">Thu</div>
+    <div class="col"><i class="fas fa-cloud"></i></div>
+    <div class="col">13ºC 9º</div>
+  </div>
+  <div class="row">
+    <div class="col">Fri</div>
+    <div class="col"><i class="fas fa-cloud-sun"></i></div>
+    <div class="col">16ºC 13º</div>
+  </div>
+</div>
+</div>
+<small>
+  <a href="https://github.com/mildani/weather-app" target="_blank">Open-source code</a> by mildani </small>
+</div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>

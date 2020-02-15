@@ -1,0 +1,94 @@
+#app-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #dadde1;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #878787;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+i {
+  display:inline;
+}
+
+form#search-city-form {
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 10px;
+}
+header {
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+div {
+  text-align: center;
+}
+
+div#current-city {
+  margin-bottom: 40px;
+}
+
+.time-stamp {
+  font-weight: 500;
+}
+.city {
+  color: #347474;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+
+
+.temperature-display {
+  color: #347474;
+  font-size: 50px;
+}
+
+
+
+.temperature {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+#weather-description-display:first-letter {
+  text-transform:capitalize;
+}
+
+#temp-button,
+#fahrenheit-button,
+#celsius-button {
+vertical-align: +26px;
+  font-size: 12px;
+}
+
+
+
+#fahrenheit-button,
+#celsius-button {
+  color: blueviolet;
+  text-decoration: underline;
+  border: none;
+  background: none;
+}
+
+#celsius-button.active, #fahrenheit-button.active {
+  color: #878787;
+  text-decoration: none;
+  border:none;
+  background: none;
+}
+
+#button-current-location {
+  display: block;
+  font-size: 10px;
+}
