@@ -19,6 +19,10 @@ i {
   display:inline;
 }
 
+small {
+  font-size: 10px;
+}
+
 form#search-city-form {
   text-align: left;
   margin-bottom: 10px;
@@ -31,10 +35,6 @@ header {
 
 div {
   text-align: center;
-}
-
-div#current-city {
-  margin-bottom: 40px;
 }
 
 .time-stamp {
@@ -92,3 +92,4 @@ vertical-align: +26px;
   display: block;
   font-size: 10px;
 }
+
